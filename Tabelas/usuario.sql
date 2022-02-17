@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 22-Set-2021 às 14:04
+-- Tempo de geração: 17-Fev-2022 às 17:32
 -- Versão do servidor: 8.0.17
 -- versão do PHP: 7.3.10
 
@@ -36,6 +36,13 @@ CREATE TABLE `usuario` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Sistema de Login do site ';
 
 --
+-- Extraindo dados da tabela `usuario`
+--
+
+INSERT INTO `usuario` (`id_usuario`, `email`, `senha`, `tipo_user`) VALUES
+(7, 'root', '12345678', 'adm');
+
+--
 -- Índices para tabelas despejadas
 --
 
@@ -53,7 +60,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_usuario` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_usuario` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
